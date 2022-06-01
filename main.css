@@ -21,7 +21,20 @@
     margin: 0;
   }
 
-  #container{
+  .container{
+      margin-top: 0.5em;
+  }
+
+  .search-bar{
+      margin-left: 0.5em;
+      margin-bottom: 0.5em;
+  }
+
+  .search-label{
+      font-weight: 600;
+  }
+
+  #grid-container{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 0.5em;
@@ -65,7 +78,16 @@
   }
 
   @media (min-width: 600px){
-    #container{
+    .container{
+        margin-top: 1em;
+    }
+  
+    .search-bar{
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+    #grid-container{
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 1.5em;
         margin: 0.5em 0.5em;

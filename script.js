@@ -21,8 +21,7 @@ getApis().then(apis =>
 function getApiHTML(obj){
     return `
     <div class="api">
-    <div class="api-name"><a class="api-link" href="${obj.Link}">${obj.API}</a></div>
-    <div class="api-category">${obj.Category}</div>
+    <div class="api-name"><a class="api-link" href="${obj.Link}">${obj.API} (${obj.Category})</a></div>
     <div class="api-description">${obj.Description}</div>
     <div class="api-auth">Auth: ${obj.Auth}</div>
     <div class="api-https">HTTPS: ${obj.HTTPS}</div>
